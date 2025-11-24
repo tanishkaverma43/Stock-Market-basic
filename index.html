@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stock Dashboard</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h2>Stock Dashboard</h2>
+      </header>
+      <div class="content">
+        <aside>
+          <div id="stockList" class="stock-list"></div>
+        </aside>
+        <main>
+          <div id="chart" class="chart-container">
+            <div id="chart-timeline"></div>
+          </div>
+          <div class="time-buttons">
+            <button id="1mo_button">1 Month</button>
+            <button id="3mo_button">3 Months</button>
+            <button id="1y_button">1 Year</button>
+            <button id="5y_button">5 Years</button>
+          </div>
+          <div id="stockDetails" class="stock-details">
+            <div class="stock-info">
+              <h2 id="stockName">Stock Name</h2>
+              <p id="book_Value">Book Value: $0.00</p>
+              <p id="profit">Profit: 0.00%</p>
+            </div>
+            <p id="stockSummary">Summary: N/A</p>
+            <p id="stockMin">Low value: $0.00</p>
+            <p id="stockMax">Peak value: $0.00</p>
+          </div>
+        </main>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
